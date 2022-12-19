@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>poker blinds klok</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4a627a8e04.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="timer">
+        15:00
+    </div>
+
+    <div class="buttons">
+        <button class="start">start</button>
+        <button class="stop">stop</button>
+        <button class="resetall">reset all</button>
+        <button class="reset">reset</button>
+    </div>
+
+    <div class="information">
+        Level: <span class="level">1</span>
+        Small Blind: <span class="smallblind">5</span>
+        Big blind: <span class="bigblind">10</span>
+    </div>
+
+
+
+    <div class="nextlevelinfo">
+        Next level <br> <span></span>
+        Small Blind: <span class="nextsmallblind">10</span>
+        Big blind: <span class="nextbigblind">20</span>
+    </div>
+
+    <div class="settings">
+        <button class="settingsbutton">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-settings">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path
+                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                </path>
+            </svg>
+        </button>
+    </div>
+
+    <div class="settingspage">
+        <h3>Custom blinds</h3>
+        <div class="things">
+            <button class="addelement">Add a new level</button>
+            <div class="newtime">
+                Time:
+                <input type="text" class="time-input" placeholder="minutes">
+            </div>
+        </div>
+        <i class="fa-solid fa-xmark"></i>
+        <form action="">
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

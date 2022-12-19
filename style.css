@@ -1,0 +1,154 @@
+:root {
+    --color-background-color: rgb(56, 133, 138);
+    --color-blurred-background: rgba(255, 255, 255, 0.1);
+}
+
+
+body {
+    background-color: var(--color-background-color);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer {
+    background-color: var(--color-blurred-background);
+    font-size: 120px;
+    padding: 20px;
+    height: 30%;
+    margin-top: 10px;
+    border-radius: 5%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.information {
+    background-color: var(--color-blurred-background);
+    padding: 30px 30px;
+    border-radius: 10px;
+    margin: 50px;
+    text-align: center;
+    font-size: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.things {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 45px;
+}
+
+.newtime {
+    display: flex;
+    flex-direction: column;
+}
+
+.time-input {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.buttons>button {
+    background-color: var(--color-blurred-background);
+    margin: 5px;
+    border-radius: 3px;
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 10px 20px;
+    box-shadow: 3px 3px 1px;
+}
+
+.buttons>button:active {
+    box-shadow: none;
+    translate: 3px 3px;
+}
+
+.nextlevelinfo {
+    background-color: var(--color-blurred-background);
+    padding: 30px 30px;
+    text-align: center;
+    position: absolute;
+    right: 5%;
+    font-size: 25px;
+    bottom: 5%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.settings>button {
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.settingspage {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    padding: 20px;
+    height: 80%;
+    width: 35%;
+    text-align: center;
+    overflow-y: scroll;
+    transform: translateX(-1000%);
+}
+
+.lvl {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column;
+}
+
+.fa-xmark {
+    font-size: 35px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.settingspage>button {
+    background-color: var(--color-background-color);
+    border: 1px solid black;
+    padding: 5px;
+    box-shadow: -2px -2px black;
+}
+
+.settingspage>button:active {
+    box-shadow: none;
+    transform: translate(-2px, -2px);
+}
+
+.lvl>input {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.addelement {
+    background-color: var(--color-background-color);
+    border: none;
+    box-shadow: -2px -2px;
+}
+
+.addelement:active {
+    transform: translate(-2px, -2px);
+    box-shadow: none;
+}
+
+.time-input {
+    text-align: center;
+}
