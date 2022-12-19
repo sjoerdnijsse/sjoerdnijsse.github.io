@@ -176,5 +176,5 @@ setInterval(() => {
             levelfunction()
         }
     }
-}, 1);
+}, 1000);
 
